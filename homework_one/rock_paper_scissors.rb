@@ -58,5 +58,3 @@ tournament = [
                [ ["David E.", "R"], ["Richard X", "P"]]
               ]
              ]
-
-p rps_tournament_winner(tournament)

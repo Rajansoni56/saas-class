@@ -1,7 +1,7 @@
 # NOTE: The String#sum method will give you an
 # unique number for the same letters (case sensitive).
 # Use that to get the anagrams
-def combine_anagram(words)
+def combine_anagrams(words)
   words.inject({ }) do |hash, word|
     hash[word.downcase.sum] ||= []
     hash[word.downcase.sum] << word
@@ -9,4 +9,4 @@ def combine_anagram(words)
   end.values
 end
 
-p combine_anagram(['cars', 'for', 'potatoes', 'racs', 'four','scar', 'creams', 'scream'])
+p combine_anagrams([])

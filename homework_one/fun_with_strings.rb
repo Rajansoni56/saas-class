@@ -3,8 +3,6 @@ def palindrome?(string)
   string == string.reverse
 end
 
-palindrome?("A man, a plan, a canal -- Panama")
-
 def blank?(word)
   word.gsub(/\s/i, "") == ""
 end
@@ -19,6 +17,4 @@ def count_words(string)
   end
 end
 
-puts count_words "A man, a plan, a canal -- Panama"
-puts count_words "Doo bee doo bee doo"
 

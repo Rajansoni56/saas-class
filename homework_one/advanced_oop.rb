@@ -56,10 +56,3 @@ class Foo
   attr_accessor_with_history :bar, :pawa
 end
 
-
-f = Foo.new
-f.bar = 3
-f.bar = 4
-f.bar = :hello
-puts f.bar_history.inspect
-
