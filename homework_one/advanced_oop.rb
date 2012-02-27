@@ -1,4 +1,4 @@
-class Class
+module ClassExtensions
 
   # Defines the attr_name and attr_name_history methods.
   # The _history method will start with a nil element in the array
@@ -52,7 +52,8 @@ class Class
   end
 end
 
+Class.send(:include, ClassExtensions)
+
 class Foo
   attr_accessor_with_history :bar, :pawa
 end
-
